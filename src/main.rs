@@ -1,5 +1,11 @@
+#[derive(Debug)]
+struct Structure(i32);
+
+#[derive(Debug)]
+struct Deep(Structure);
+
 fn main() {
-    println!("update edit balls ass dickerds")
-    let x = 5 + /* + 90 + */ 5;
-    println!("x: {}", x);
+    println!("Start");
+
+    println!("out: {:?}", Deep(Structure(3)));
 }
